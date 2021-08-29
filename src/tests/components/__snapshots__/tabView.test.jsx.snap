@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TabView Tests /> should render <TabView /> 1`] = `
+<div
+  className="rdt-tabs"
+>
+  <div
+    className="rdt-tabs-header"
+  >
+    <TabItem
+      active={true}
+      key="Tab 1"
+      onClick={[Function]}
+      title="test"
+    />
+    <TabItem
+      active={false}
+      key="Tab 2"
+      onClick={[Function]}
+      title="test 2"
+    />
+  </div>
+  <div
+    className="rdt-tabs-content"
+    role="presentation"
+    tabIndex={0}
+  />
+</div>
+`;

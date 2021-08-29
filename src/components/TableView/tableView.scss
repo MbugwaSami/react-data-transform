@@ -1,0 +1,23 @@
+.rdt-table-view {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    height: 100%;
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+
+        tbody {
+            tr:nth-child(odd) {
+                background-color: #0000000d;
+            }
+        }
+
+        td,
+        th {
+            border-bottom: 1px solid #dee2e6;
+            text-align: left;
+            padding: 8px;
+        }
+    }
+}

@@ -1,0 +1,232 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table View  should render <TabView /> 1`] = `
+<TableView
+  colums={
+    Array [
+      Object {
+        "dataKey": "c1",
+        "title": "C1",
+      },
+      Object {
+        "dataKey": "c2",
+        "title": "C2",
+      },
+      Object {
+        "dataKey": "c3",
+        "title": "C3",
+      },
+      Object {
+        "dataKey": "c4",
+        "title": "C4",
+      },
+      Object {
+        "dataKey": "c5",
+        "title": "C5",
+      },
+    ]
+  }
+  tableData={
+    Array [
+      Object {
+        "c1": "1",
+        "c2": "1",
+        "c3": "1",
+        "c4": "1",
+        "c5": "1",
+        "id": 1,
+      },
+      Object {
+        "c1": "1",
+        "c2": "1",
+        "c3": "1",
+        "c4": "1",
+        "c5": "1",
+        "id": 2,
+      },
+      Object {
+        "c1": "1",
+        "c2": "1",
+        "c3": "1",
+        "c4": "1",
+        "c5": "1",
+        "id": 3,
+      },
+      Object {
+        "c1": "1",
+        "c2": "1",
+        "c3": "1",
+        "c4": "1",
+        "c5": "1",
+        "id": 4,
+      },
+    ]
+  }
+>
+  <div
+    className="rdt-table-view"
+  >
+    <table
+      className="rdt-table"
+    >
+      <thead>
+        <RenderColums>
+          <tr
+            className="rdt-table-head"
+          >
+            <th
+              key="c1"
+            >
+              C1
+            </th>
+            <th
+              key="c2"
+            >
+              C2
+            </th>
+            <th
+              key="c3"
+            >
+              C3
+            </th>
+            <th
+              key="c4"
+            >
+              C4
+            </th>
+            <th
+              key="c5"
+            >
+              C5
+            </th>
+          </tr>
+        </RenderColums>
+      </thead>
+      <tbody>
+        <RenderRows>
+          <tr
+            className="rdt-table-row"
+            key="1"
+          >
+            <td
+              key="c11"
+            >
+              1
+            </td>
+            <td
+              key="c21"
+            >
+              1
+            </td>
+            <td
+              key="c31"
+            >
+              1
+            </td>
+            <td
+              key="c41"
+            >
+              1
+            </td>
+            <td
+              key="c51"
+            >
+              1
+            </td>
+          </tr>
+          <tr
+            className="rdt-table-row"
+            key="2"
+          >
+            <td
+              key="c12"
+            >
+              1
+            </td>
+            <td
+              key="c22"
+            >
+              1
+            </td>
+            <td
+              key="c32"
+            >
+              1
+            </td>
+            <td
+              key="c42"
+            >
+              1
+            </td>
+            <td
+              key="c52"
+            >
+              1
+            </td>
+          </tr>
+          <tr
+            className="rdt-table-row"
+            key="3"
+          >
+            <td
+              key="c13"
+            >
+              1
+            </td>
+            <td
+              key="c23"
+            >
+              1
+            </td>
+            <td
+              key="c33"
+            >
+              1
+            </td>
+            <td
+              key="c43"
+            >
+              1
+            </td>
+            <td
+              key="c53"
+            >
+              1
+            </td>
+          </tr>
+          <tr
+            className="rdt-table-row"
+            key="4"
+          >
+            <td
+              key="c14"
+            >
+              1
+            </td>
+            <td
+              key="c24"
+            >
+              1
+            </td>
+            <td
+              key="c34"
+            >
+              1
+            </td>
+            <td
+              key="c44"
+            >
+              1
+            </td>
+            <td
+              key="c54"
+            >
+              1
+            </td>
+          </tr>
+        </RenderRows>
+      </tbody>
+    </table>
+  </div>
+</TableView>
+`;
