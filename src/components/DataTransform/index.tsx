@@ -28,7 +28,7 @@ const DataTransform: FC<DataTransformProps> = (props) => {
     if (styles) {
       setState({ ...state, styles });
     }
-  });
+  }, []);
 
   return (
     <div tabIndex={0} className="rdt-wrapper">
