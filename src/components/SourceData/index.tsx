@@ -3,7 +3,7 @@ import { ChangeEvent, FC } from "react";
 import TableView from "../TableView";
 
 const SourceData = () => {
-  return <TableView />;
+  return <div></div>;
 };
 
 export default SourceData;
