@@ -18,10 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "typeRoots": ["node_modules/@types", "./src/types"]
+    "jsx": "react-jsx"
   },
   "include": [
     "src"
-  ]
+, "tests", "src/tests/components/tabItem.test.tsx", "App.test.tsx"  ]
 }

@@ -1,22 +1,54 @@
-import { ChangeEvent } from "react";
+import { Fragment } from "react";
 
-const TableView = <T extends object>(props: TableViewProps<T>) => {
-  const { colums, data } = props;
+import "./tableView.scss";
 
-  const renderColums = () => {
+const TableView = <T extends { [key: string]: any }>(
+  props: TableViewProps<T>
+) => {
+  const { colums, tableData, tableName } = props;
+
+  const RenderColums = () => {
     return (
-      <tr>
+      <tr className="rdt-table-head">
+        {colums?.map((column) => {
+          return <th key={column.dataKey}>{column.title}</th>;
+        })}
       </tr>
     );
   };
 
-  const renderRows = () => {};
+  const RenderRows = () => {
+    return (
+      <Fragment>
+        {tableData?.map((row) => {
+          return (
+            <tr key={row?.id} className="rdt-table-row">
+              {colums?.map((column) => {
+                return (
+                  <td key={column.dataKey + row?.id}>{row[column.dataKey]}</td>
+                );
+              })}
+            </tr>
+          );
+        })}
+      </Fragment>
+    );
+  };
 
   return (
     <div className="rdt-table-view">
-      <table>
-        <thead>{renderColums()}</thead>
-      </table>
+      {!tableData?.length ? (
+        <div className="rdt-empty-table">{tableName} has no data </div>
+      ) : (
+        <table className="rdt-table">
+          <thead>
+            <RenderColums />
+          </thead>
+          <tbody>
+            <RenderRows />
+          </tbody>
+        </table>
+      )}
     </div>
   );
 };

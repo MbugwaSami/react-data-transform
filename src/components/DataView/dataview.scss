@@ -1,0 +1,35 @@
+.rdt-data-view {
+    border: 2px solid #dbdbdb;
+    height: 100%;
+
+    .rdt-data-view-table-section {
+        padding: 10px;
+    }
+
+    .rdt-tabs {
+        .rdt-tabs-header {
+            background-color: #dbdbdb;
+
+            .rdt-tab-item {
+                height: 20px;
+                color: #000;
+                border-color: #c5c5c5;
+            }
+
+            .rdt-tab-item-selected {
+                background-color: #ffffff;
+
+                .rdt-tab-item-icon {
+                    svg {
+                        fill: #0858a8;
+                    }
+                }
+
+            }
+        }
+        .rdt-tabs-content{
+            padding: 20px;
+        }
+    }
+
+}
