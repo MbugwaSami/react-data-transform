@@ -4,8 +4,11 @@ import { FC, useEffect, useState } from "react";
 import "./transform.scss";
 import SourceData from "../SourceData";
 import TabView from "../TabView";
+import { setSourceData } from "../../store/actions/sourceData";
+import { useAppDispatch } from "../../store";
 
 const DataTransform: FC<TransformComponentProps> = (props) => {
+  const dispatch = useAppDispatch();
   const { sourceData, allowImport, targetDataSet, components, styles } = props;
   const [state, setState] = useState<InitialTransFormState>({
     targetDataSet: [],
@@ -20,6 +23,7 @@ const DataTransform: FC<TransformComponentProps> = (props) => {
     setState({ ...state, targetDataSet, allowImport: allowImport || false });
     if (sourceData) {
       setState({ ...state, sourceData });
+      setSourceData(dispatch, sourceData);
     }
     if (components) {
       setState({ ...state, components });
@@ -41,7 +45,7 @@ const DataTransform: FC<TransformComponentProps> = (props) => {
   const renderTabIcon = (svgPath: string) => {
     return (
       <svg style={{ width: "18px", height: "18px" }} viewBox="0 0 24 24">
-        <path  d={svgPath} />
+        <path d={svgPath} />
       </svg>
     );
   };
