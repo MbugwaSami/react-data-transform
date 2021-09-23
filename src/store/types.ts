@@ -1,0 +1,2 @@
+export const SET_SOURCE_DATA = "SET_SOURCE_DATA";
+export const SET_PREVIEW_DATA = "SET_PREVIEW_DATA";

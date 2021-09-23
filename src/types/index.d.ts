@@ -102,3 +102,31 @@ interface CustomCssPros {
   tabItem?: React.CSSProperties;
   tabViewHeader?: React.CSSProperties;
 }
+
+//Sore props
+
+interface Action {
+  type: string;
+  payload: any;
+}
+
+interface SourceDataReducer {
+  tablesData: Array<ViewDataProps>;
+}
+
+interface PreviewDataReducer {
+  tablesData: Array<ViewDataProps>;
+}
+
+interface AppState {
+  sourceData: SourceDataReducer;
+  previewData: PreviewDataReducer;
+}
+
+interface AppReducers {
+  sourceData: (state: SourceDataReducer, action: Action) => SourceDataReducer;
+  previewData: (
+    state: PreviewDataReducer,
+    action: Action
+  ) => PreviewDataReducer;
+}
